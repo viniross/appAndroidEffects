@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.ObjectAnimator;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -14,8 +15,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView txtTitleMcqueen = findViewById(R.id.txtTitleMcqueen);
+        TextView txtTitleMcqueen, txtCarros;
+
+        txtTitleMcqueen = findViewById(R.id.txtTitleMcqueen);
         txtTitleMcqueen.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         txtTitleMcqueen.getPaint().setShadowLayer(3, 3, 5, Color.BLACK);
+
+        txtCarros = findViewById(R.id.txtCarros);
+
+        txtCarros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ObjectAnimator rotate = ObjectAnimator.ofFloat(txtCarros, "rotation", 0, 360f);
+                rotate.setDuration(1000);
+                rotate.start();
+            }
+        });
+
+
     }
 }
