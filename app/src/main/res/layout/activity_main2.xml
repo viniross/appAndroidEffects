@@ -4,6 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mate_wpp"
     tools:context=".MainActivity2">
 
+    <TextView
+        android:id="@+id/txtTitleMate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mate"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/txtMate"
+        android:layout_width="318dp"
+        android:layout_height="171dp"
+        android:text="Mate é um dos personagens principais da franquia &quot;Carros&quot;. Ele é um guincho enferrujado e leal, morador de Radiator Springs, e se torna o melhor amigo de Relâmpago McQueen. Conhecido por sua simplicidade, bom humor e coração generoso, Mate é amado por sua personalidade autêntica e seu jeito desajeitado, mas sempre disposto a ajudar. Ele traz leveza e muitas risadas à série, sendo um símbolo de amizade verdadeira."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <ImageView
+        android:id="@+id/imgMcqueen"
+        android:layout_width="220dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971"
+        app:srcCompat="@drawable/mcqueen_foto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
