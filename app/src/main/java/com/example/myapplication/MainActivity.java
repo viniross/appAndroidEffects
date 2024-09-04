@@ -51,5 +51,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Transition Activities
+        imgMate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent telaMate = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(telaMate);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
+
+
     }
 }
