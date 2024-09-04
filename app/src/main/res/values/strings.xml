@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Carros</string>
     <string name="shared_transition_name">Teste</string>
 </resources>
